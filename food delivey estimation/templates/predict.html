@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Food Delivery Estimation</title>
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Additional Styles for Predict Section */
+    #predict-form {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    #predict-form label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    #predict-form input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    #predict-form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    #predict-form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <!-- Header Code as before -->
+
+  <main id="main">
+
+    <!-- ======= Features Section ======= -->
+    <!-- Features Section Code as before -->
+
+    <!-- ======= Predict Section ======= -->
+    <section id="predict" class="predict">
+      <div class="container" data-aos="fade-up">
+        <div id="predict-form">
+          <h3 style="color:rgb(3, 104, 151);">Food Delivery Estimation</h3>
+          <form method="post" action="/output" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-sm">
+                <label for="Delivery_person_Age"><b>Delivery Person Age:</b></label>
+                <input type="text" name="Delivery_person_Age" required>
+
+                <label for="Weatherconditions"><b>Weather Conditions:</b></label>
+                <input type="text" name="Weatherconditions" required>
+
+                <label for="Type_of_vehicle"><b>Type of Vehicle:</b></label>
+                <input type="text" name="Type_of_vehicle" required>
+
+                <label for="City"><b>City:</b></label>
+                <input type="text" name="City" required>
+              </div>
+
+              <div class="col-sm">
+                <label for="Delivery_person_Ratings"><b>Delivery Person Ratings:</b></label>
+                <input type="text" name="Delivery_person_Ratings" required>
+
+                <label for="Road_traffic_density"><b>Road Traffic Density:</b></label>
+                <input type="text" name="Road_traffic_density" required>
+
+                <label for="multiple_deliveries"><b>Multiple Deliveries:</b></label>
+                <input type="text" name="multiple_deliveries" required>
+              </div>
+
+              <div class="col-sm">
+                <label for="Time_Orderd"><b>Time Ordered:</b></label>
+                <input type="text" name="Time_Orderd" required>
+
+                <label for="Vehicle_condition"><b>Vehicle Condition:</b></label>
+                <input type="text" name="Vehicle_condition" required>
+
+                <label for="Festival"><b>Festival:</b></label>
+                <input type="text" name="Festival" required>
+              </div>
+
+              <div class="col-sm">
+                <label for="Time_Order_picked"><b>Time Order Picked:</b></label>
+                <input type="text" name="Time_Order_picked" required>
+
+                <label for="Type_of_order"><b>Type of Order:</b></label>
+                <input type="text" name="Type_of_order" required>
+
+                <label for="distance"><b>Distance:</b></label>
+                <input type="text" name="distance" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-lg">Predict</button>
+          </form>
+        </div>
+      </div>
+    </section><!-- End predict Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- Footer Code as before -->
+
+  <!-- Vendor JS Files -->
+  <!-- Vendor JS Files Code as before -->
+
+  <!-- Template Main JS File -->
+  <!-- Template Main JS File Code as before -->
+
+</body>
+
+</html>
